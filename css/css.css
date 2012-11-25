@@ -1,11 +1,30 @@
 *{padding: 0; margin : 0; }
 
+header
+{
+	width: 800px;
+	height: 200px;
+	margin : auto;
+
+}
+
+header img
+{
+	background-image: url("../img/banniere.jpg");
+	background-repeat:no-repeat;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	box-shadow: 0 0 5px;
+}
+
+
+
 body
 {
 	background-image: url("../img/background.png");
 	background-repeat:repeat-x;
-	background-color: #ffeafe;
-	width: 1000px;
+	background-color: #e0b3ff;
+	width: 800px;
 	margin: auto;
 }
 
@@ -16,7 +35,7 @@ body
 
 .anecdote
 {
-	width: 800px;
+	width: 600px;
 	margin: auto;
 	background: white;
 	border-radius: 5px;
