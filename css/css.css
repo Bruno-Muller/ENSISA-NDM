@@ -1,0 +1,50 @@
+*{padding: 0; margin : 0; }
+
+body
+{
+	background-image: url("../img/background.png");
+	background-repeat:repeat-x;
+	background-color: #ffeafe;
+	width: 1000px;
+	margin: auto;
+}
+
+.opac
+{
+	background: rgba(255,255,255,0.5);
+}
+
+.anecdote
+{
+	width: 800px;
+	margin: auto;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 0 0 5px;
+}
+
+.anecdote p
+{
+	padding: 10px 20px;
+}
+
+/* Bruno test template base de données */
+
+section
+{
+	background: rgba(255,255,255,0.5);
+	padding: 20px;
+	border-radius: 20px;
+}
+
+article
+{
+	width: 800px;
+	margin: auto;
+	border-radius: 5px;
+	background: white;
+	padding: 10px 20px;
+	margin-top: 10px;
+	box-shadow: 0 0 5px;
+}
+
