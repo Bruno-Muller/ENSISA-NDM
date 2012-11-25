@@ -12,7 +12,7 @@ $anecdote->setAnecdote($_POST['anecdote']);
 Anecdote::saveAnecdote($anecdote);
 
 
-header('Location: ./index.php?page=testbdd');
+header('Location: ./index.php?page=home');
     exit();
 
 ?>
