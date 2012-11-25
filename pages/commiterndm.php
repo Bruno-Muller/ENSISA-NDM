@@ -20,6 +20,9 @@ if (isset($_POST['username']) &&
 	if (empty($_POST['username']) || empty($_POST['anecdote'])) {
 		$contentPageTemplate->replace('message', new Message('Tous les champs ne sont pas renseignés.', Message::ERROR));
 	}
+	elseif (!preg_match('#^Cette nuit, .+ NDM$#', $_POST['anecdote'])) {
+		$contentPageTemplate->replace('message', new Message('Ta NDM doit commencer par "Cette nuit, " et se terminer par " NDM"', Message::ERROR));
+	}
 	elseif (hash('sha256', $_POST['password']) != '8851f22cab155ed2d8296d147f002cc83bbff1f577623fed54021f6c71afa10d') {
 		$contentPageTemplate->replace('message', new Message('Mot de passe invalide.', Message::ERROR));
 	}
