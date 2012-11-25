@@ -18,8 +18,7 @@ if (empty($_GET['page'])) {
 // Menu principal
 $_GET['page'] = empty($_GET['page'])?'home':$_GET['page'];
 $masterMenuLinks = array('home' => 'Accueil',
-						 'commiterndm' => 'Commiter une NDM',
-                         'testbdd' => 'testBDD');
+						 'commiterndm' => 'Commiter une NDM');
 $masterMenu = new Menu();
 foreach($masterMenuLinks as $page => $title){
     $masterMenu->addlink($title, $page, ($_GET['page'] == $page));
