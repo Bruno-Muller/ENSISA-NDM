@@ -20,7 +20,22 @@ header img
 	box-shadow: 0 0 5px;
 }
 
+nav
+{
+	background-color: #000000;
+}
 
+nav li 
+{
+	text-decoration: none;
+    display: inline;
+    margin: 10px 20px;
+}
+
+nav a
+{
+	color: #ffedae;
+}
 
 body
 {
