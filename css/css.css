@@ -62,19 +62,6 @@ body
 	padding: 25px 0;
 }
 
-.anecdote
-{
-	width: 600px;
-	margin: 20px auto;
-	background: white;
-	border-radius: 5px;
-	box-shadow: 0 0 5px;
-}
-
-.anecdote p
-{
-	padding: 10px 20px;
-}
 
 /* Bruno test template base de données */
 
@@ -87,13 +74,16 @@ section
 
 article
 {
-	width: 800px;
-	margin: auto;
-	border-radius: 5px;
+	width: 600px;
+	margin: 20px auto;
 	background: white;
-	padding: 10px 20px;
-	margin-top: 10px;
+	border-radius: 5px;
 	box-shadow: 0 0 5px;
+}
+
+article p
+{
+	padding: 10px 20px;
 }
 
 footer
@@ -104,4 +94,19 @@ footer
 	box-shadow: 0 0 5px;
 	border-bottom-left-radius: 40px;
 	border-bottom-right-radius: 40px;
+	
+}
+
+footer p
+{	
+	color : #ffedae;
+	padding-top : 10px;
+	text-align: center;
+}
+
+footer a
+{
+	color : #ffedae;
+	text-decoration: underline;
+	font-weight:bold;
 }
