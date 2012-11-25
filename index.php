@@ -8,12 +8,12 @@ use lib\content\Menu;
 
 //Template maitre, les pages supplémentaires sont à mettre dans le dossier pages
 
-/*
+
 if (empty($_GET['page'])) {
-    header('Location: /index.php?page=home');
+    header('Location: ./index.php?page=home');
     exit();
 }
-*/
+
 
 // Menu principal
 $_GET['page'] = empty($_GET['page'])?'home':$_GET['page'];
