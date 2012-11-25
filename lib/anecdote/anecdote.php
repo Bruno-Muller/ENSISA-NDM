@@ -67,7 +67,7 @@ class Anecdote {
     }
     static public function getBDDAnecdotes(){
         $anecdotes = array();
-        $req = DataBase::getInstance()->prepare('SELECT id, username, anecdote, DATE_FORMAT(timestamp, \'%c/%e/%x\') AS date, DATE_FORMAT(timestamp, \'%Hh%i\') AS time FROM anecdotes');
+        $req = DataBase::getInstance()->prepare('SELECT id, username, anecdote, DATE_FORMAT(timestamp, \'%c/%e/%x\') AS date, DATE_FORMAT(timestamp, \'%Hh%i\') AS time FROM anecdotes ORDER BY timestamp DESC');
         $req->execute();
         while($datas = $req->fetch()){
             $anecdote = new Anecdote();
