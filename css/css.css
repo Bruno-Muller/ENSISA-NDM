@@ -3,6 +3,12 @@
 /*XID*/
 
 
+@font-face {
+	font-family: fail;
+	src: url('../font/fail.ttf');
+}
+
+
 header
 {
 	width: 800px;
@@ -15,26 +21,30 @@ header img
 {
 	background-image: url("../img/banniere.jpg");
 	background-repeat:no-repeat;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
 	box-shadow: 0 0 5px;
 }
 
 nav
 {
 	background-color: #000000;
+	margin: -12px 0;
+	box-shadow: 0 0 5px;
 }
 
 nav li 
 {
-	text-decoration: none;
     display: inline;
     margin: 10px 20px;
 }
 
 nav a
 {
+	text-decoration: none;
+	font-family: fail;
 	color: #ffedae;
+	font-size: 35px;
 }
 
 body
@@ -49,12 +59,13 @@ body
 .opac
 {
 	background: rgba(255,255,255,0.5);
+	padding: 25px 0;
 }
 
 .anecdote
 {
 	width: 600px;
-	margin: auto;
+	margin: 20px auto;
 	background: white;
 	border-radius: 5px;
 	box-shadow: 0 0 5px;
